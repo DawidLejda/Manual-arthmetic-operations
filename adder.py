@@ -12,9 +12,9 @@ def moved(list):
 
 def addTwoNumbers(l1, l2):
 
+    diff = abs(len(l1) - len(l2))
     if len(l1) > len(l2):
         size = len(l1) + 1
-        diff = len(l1) - len(l2)
         while diff != 0:
             l2.insert(0, 0)
             diff -= 1
@@ -49,4 +49,3 @@ def addTwoNumbers(l1, l2):
                 l1[len(l1) - 2 - i] = str(f"{l1[len(l1) - 2 - i]} + {first} ")
 
     print(tabulate([moved(l1), moved(l2), output], tablefmt="grid"))
-    output[0] = None
