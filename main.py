@@ -3,17 +3,19 @@ import timeit
 
 from adder import addTwoNumbers
 
-15
-l2 = [1, 2, 9]
-
 
 def main():
-    term1_num = input("First number: ")
-    term2_num = input("Second number: ")
-    l1 = input_to_array(term1_num)
-    l2 = input_to_array(term2_num)
 
-    addTwoNumbers(l1, l2)
+    while True:
+        try:
+            term1_num = input("First number: ")
+            term2_num = input("Second number: ")
+            l1 = input_to_array(term1_num)
+            l2 = input_to_array(term2_num)
+            addTwoNumbers(l1, l2)
+            break
+        except ValueError:
+            print("Given input is not a number")
 
 
 def input_to_array(l):
