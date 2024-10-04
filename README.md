@@ -41,8 +41,10 @@
       There are four core functions: Addition, Subtraction, Multiplication, and Division,
       that each do their own calculations and always yield output to a generator that prints data. 
       
-      They work by reading lists from right to left and performing corresponding operations on those lists, as we would do with pen and paper.
-      For example, the last element of the subtraction 407-315 is 5 and 6, giving the output 7-5=2 at the last index of the output list,
+      They work by reading lists from right to left
+      performing corresponding operations on those lists,as we would do with pen and paper.
+      EXAMPLE
+      the last element of the subtraction 407-315 is 5 and 6, giving the output 7-5=2 at the last index of the output list,
       then moving to the next index from the right, analyzing it from two lists.
 
       To give it a look close to handwritten calculations, every print is done using the tabulate library,
@@ -51,7 +53,8 @@
       which selects the variation of tabulate content that fits the given type of operation.
 
       Division operation is the only one where 
-      I decided to prompt the answer as users not understanding manual calculation of division might be confused about what the answer is.
+      I decided to prompt the answer as users not understanding
+      manual calculation of division might be confused about what the answer is.
       I have made it so that if a number has no decimal points it ends with the '=' character,
       and if it ends with a fraction like 4 while the divisor is, for example, 5,
       the program will prompt the user that the given calculation results in a fraction of 4/5.
