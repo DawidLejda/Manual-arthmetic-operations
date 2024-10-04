@@ -56,7 +56,8 @@
       and if it ends with a fraction like 4 while the divisor is, for example, 5,
       the program will prompt the user that the given calculation results in a fraction of 4/5.
       
-      For multiplication, if choosing long steps i decided to indicate which number is currently being multiplied by enclosing it in square brackets.
+      For multiplication, if choosing long steps i decided to indicate 
+      which number is currently being multiplied by enclosing it in square brackets.
       
       Previously, I had done the final step of summing every multiplication output inside the Addition function,
       but because of adding generator yields, it no longer works,
