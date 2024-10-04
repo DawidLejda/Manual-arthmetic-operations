@@ -3,7 +3,8 @@
 #### Description:
 
   #### Input
-      Input is taken as a command value which can be either: '\help', '\history', '\steps' or a mathematical expression that is evaluated by the program.
+      Input is taken as a command value which can be either:
+      '\help', '\history', '\steps' or a mathematical expression that is evaluated by the program.
       If correct, it is passed accordingly by operation (-, +, *, /) to the function responsible for that type of calculation.
 
       After every new command, the command screen is cleared, so at a given time only one mathematical calculation is being expressed,
@@ -14,8 +15,8 @@
       If an unrecognizable command is inputted three times in a row,
       the program recognizes that the user might be confused and provides additional information if the user types '\help'.
   #### Choice between output lenght
-      By default, any given input only prints the final calculation answer.
-      The user, by typing '\steps', has the ability to switch between printing only the default option and a full step-by-step logic behind every calculation done to get to the final output.
+      By default, any given input only prints the final calculation answer. The user, by typing '\steps',
+      has the ability to switch between printing only the default option and a full step-by-step logic behind every calculation done to get to the final output.
       Every step is separated by a block of three dots representing loading until the final output, with an interval of one step every 1.5 seconds.
   #### Recording user activity
       With every correct equation that the user inputs, it will be stored in a CSV file. When the user enters the history submenu,
@@ -32,9 +33,10 @@
       This stops the program and deletes the entire history of operations done during the program's runtime.
 
   ### How calculations work explained, design choice
-      There are four core functions: Addition, Subtraction, Multiplication, and Division, that each do their own calculations and always yield output to a generator that prints data. 
+      There are four core functions: Addition, Subtraction, Multiplication, and Division,
+      that each do their own calculations and always yield output to a generator that prints data. 
+      
       They work by reading lists from right to left and performing corresponding operations on those lists, as we would do with pen and paper.
-
       For example, the last element of the subtraction 407-315 is 5 and 6, giving the output 7-5=2 at the last index of the output list,
       then moving to the next index from the right, analyzing it from two lists.
 
