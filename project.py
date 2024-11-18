@@ -619,13 +619,11 @@ def dividing(output, next_output, div_x_quotient):
 
 def subtracting_division(l1, l2, size):
     (header,output,) = [" "] * size, [" "] * size
-    
-
     for _ in range(size):
-        if(len(l1) != size):
-            l1.insert(0,0)
-        if(len(l2) != size):
-            l2.insert(0,0)
+        if len(l1) != size:
+            l1.insert(0, 0)
+        if len(l2) != size:
+            l2.insert(0, 0)
 
         if l1[_] == " ":
             l1[_] = 0
@@ -718,15 +716,14 @@ def Division(l1, l2, size):
             dividend = l1[i]
         else:
             zero = True
-            for x in enumerate ((output[output_position]), i):
+            for x in enumerate((output[output_position]), i):
                 if type(x) == int:
-                    zero = False         
-                
+                    zero = False
+
             if zero:
                 dividend = 0
             else:
                 dividend = int("".join(str(x) for x in output[output_position]))
-            
 
         if dividend >= divisor:
             remainer = dividend % divisor
