@@ -1,8 +1,14 @@
+
+
+
+
 # Simulating manual arthmetic operations
 #### Video Demo:  https://youtu.be/fWOWn5EfbFY
 #### Description:
   CS50P final project simulating hand written operation
   ## Input
+  ![CS50PFinalProject_ManualArthmeticOperations-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b57941c2-1165-4459-82ee-1b33eadd02e0)
+  
   Input is taken as a command value which can be either:
   **'\help', '\history', '\steps'** or a mathematical expression that is evaluated by the program.
   If correct, it is passed accordingly by operation **(-, +, *, /)** 
@@ -23,6 +29,7 @@
   The user can type the index of the equation that will be calculated again or type **'\history'** again to quit this submenu.
   
   ## Saving data to PDF
+  ![image](https://github.com/user-attachments/assets/8e358d68-4112-4226-86a3-fa3741fd407e)
   Inside the history submenu, the user has the ability to save calculations to a PDF file by typing \save index_number.
   This will generate a PDF file with the same name as the equation inside the program folder.
   A successful operation will prompt the user with the location of the saved file.
