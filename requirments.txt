@@ -1,8 +1,0 @@
--copy
--tabulate
--os
--rich
--time
--csv
--FPDF
--pytest

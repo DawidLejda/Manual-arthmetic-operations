@@ -1,0 +1,4 @@
+tabulate
+rich
+fpdf
+pytest
